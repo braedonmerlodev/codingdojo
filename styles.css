@@ -1,0 +1,24 @@
+#wrapper {
+	height: 600px;
+	width: 1000px;
+	background-color: white;
+}
+
+#back{
+	display: none;
+}
+
+#contact_card{
+height: 200px;
+width: 325px;
+text-align: center;
+font-size: 18px;
+font-weight: bold;
+display: inline-block;
+background-color: white;
+margin-left: 3px;
+border: 2px solid black;
+vertical-align: top;
+}
+
+

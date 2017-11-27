@@ -1,0 +1,54 @@
+<html>
+   <head>
+	<link rel="stylesheet" type="text/css" href="styles.css"> 
+       <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script> 
+       <script type="text/javascript">
+       $(document).ready(function(){
+       		$("button").click(function(){
+       			var first = $("#first").val();
+       			var last = $("#last").val();
+       			var desc = $("textarea").val()
+       			$("#right").append("<div id = 'contact_card'><p>" + first + " " + last + "</p><p id = 'back'> " + desc + " </p> </div>");
+       			return false;
+
+       		});
+       		$(document).on('click', '#contact_card', function(){
+       			$(this).children().toggle();
+
+       		});
+
+       		});
+       </script>
+   </head>
+<body>
+			
+			<div id="wrapper">
+				<div id="left">
+					<form>
+						<label> First Name: </label>
+							<input type="text" name="first" id="first">
+						<label> Last Name: </label>
+							<input type="text" name="last" id="last">
+						<label> Description: </label>
+							<textarea></textarea>
+						<button>Add User</button>
+
+
+				</div>
+				<div id="right">
+				</div>
+
+				<!-- <h1>Add User</h1>
+					<form>
+						<label>First Name: </label>
+						<input type="text" placeholder="First Name" id="first_name">
+						<label>Last Name: </label>
+						<input type="text" placeholder="Last Name" id="last_name">
+						<label>Description</label>
+						<textarea rows ="4" cols="50" type="text" placeholder="description" id="description"></textarea>
+						<input id="submit" type="submit" value="Submit">
+					</form> -->
+</body>
+</html>
+
+
